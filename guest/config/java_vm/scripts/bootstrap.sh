@@ -1,4 +1,3 @@
-#!/bin/bash -x
+#!/bin/bash -e
 
-
-. /config/provisioning/00__start.sh
+source /config/provisioning/00__start.sh

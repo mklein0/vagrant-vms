@@ -19,7 +19,7 @@ case ${SPARK_ASSET} in
 esac
 
 
-if [ -z "${SPARK_ASSET}"]; then
+if [ -z "${SPARK_ASSET}" ]; then
 
 # JDK does not exist, do not install
 echo "Could Not Find Spark tarball" 1>&2

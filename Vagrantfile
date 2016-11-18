@@ -13,7 +13,7 @@ Vagrant.configure(2) do |config|
 	config.vm.define "java_vm" do |java_vm|
 		# Every Vagrant development environment requires a box. You can search for
 		# boxes at https://atlas.hashicorp.com/search.
-	 java_vm.vm.box = "ubuntu/trusty64"
+	 java_vm.vm.box = "ubuntu/xenial64"
 
 		# Enable provisioning with a shell script. Additional provisioners such as
 		# Puppet, Chef, Ansible, Salt, and Docker are also available. Please see the

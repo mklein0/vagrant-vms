@@ -19,7 +19,7 @@ case ${JAVA_ASSET} in
 esac
 
 
-if [ -z "${JAVA_ASSET}"]; then
+if [ -z "${JAVA_ASSET}" ]; then
 
 # JDK does not exist, do not install
 echo "Could Not Find JDK" 1>&2
@@ -48,7 +48,7 @@ done
 
 mkdir -p /etc/profile.d
 cat > /etc/profile.d/java.sh << EOF
-JAVA_HOME=\$(/usr/bin/java -showversion -verbose 2>&1 | perl -pe 'm: (.*)/jre/lib/rt.jar]:; print "$1\n"; exit 0')
+JAVA_HOME=\$(/usr/bin/java -showversion -verbose 2>&1 | perl -pe 'm: (.*)/jre/lib/rt.jar]:; print "\$1\n"; exit 0')
 JRE_HOME=\${JAVA_HOME}
 export JAVA_HOME
 export JRE_HOME

@@ -27,4 +27,4 @@ pep8.txt
 MANIFEST
 
 .vagrant
-.cache.*/
+guest/config/*/.cache/
